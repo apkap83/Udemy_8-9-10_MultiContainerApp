@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t apkap83/udemy_8910_react-test -f ./client/Dockerfile.dev
+  - docker build -t apkap83/udemy_8910_react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run apkap83/udemy_8910_react-test npm test --  --coverage
