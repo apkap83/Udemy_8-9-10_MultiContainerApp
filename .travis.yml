@@ -5,7 +5,7 @@ services:
 before_install:
   - docker build -t apkap83/udemy_8910_react-test -f ./client/Dockerfile.dev ./client
 
-# script:
+script:
 # - docker run -e CI=true apkap83/udemy_8910_react-test npm test
 
 after_success:
